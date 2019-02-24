@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		h1{
+			font-size: 50px;
+			color: black;
+			text-align: center;
+		}
+		body{
+			background-image: url(pic10.jpg);
+			background-size: 100% 100%;
+		}
+		.form{
+
+			width: 200px;
+			height: 800px;
+		}
+		input[type="text"],textarea{
+			width: 300px;
+			height: 30px;
+			border: 1px white;
+			border border-radius: 50%;
+			margin-top: 2px;
+			margin-bottom: 10px;
+			box-sizing: border-box;
+		}
+input[type="text"]:focus{	
+	background-color: #FFFFFF;
+	box-shadow: 0 0 0 1px;
+	transition: 0.6s all;
+	}
+	textarea:focus{
+	background-color: #FFFFFF;
+	transition: 0.6s all;
+	}
+label{
+	color:black;
+	}
+.mybutton {
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.form{
+	width: 200px;
+	height: 800px;
+     }
+</style>
+</head>
+<body>
+<font color="black" size="3">
+<center>
+	<h1><center><u>VISITORS</u></center></h1>
+	<div class="form">
+<form action="insertphone.php" method="POST">
+<h1>
+		<label>Visitor ID : </label>
+		<input type="text" name="t7" id="id" placeholder="Enter ID"><br>
+		<label>Visitor phone : </label>
+		<input type="text" name="t8" id="phno" placeholder="Enter Phone No."><br>
+		<input type="Submit" value="Submit" class="mybutton">
+</h1>
+</form>
+</div>
+</font>
+</center>
+</body>
+</html>

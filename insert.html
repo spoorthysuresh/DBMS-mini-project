@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		h1{
+			font-size: 50px;
+			color: white;
+			text-align: center;
+		}
+		body{
+			background-image: url(pic20.jpg);
+			background-size: 100% 100%;
+		}
+		.form{
+
+			width: 200px;
+			height: 800px;
+		}
+		input[type="text"],textarea{
+			width: 300px;
+			height: 30px;
+			border: 1px white;
+			border border-radius: 50%;
+			margin-top: 2px;
+			margin-bottom: 10px;
+			box-sizing: border-box;
+		}
+input[type="text"]:focus{	
+	background-color: #FFFFFF;
+	box-shadow: 0 0 0 1px;
+	transition: 0.6s all;
+	}
+	textarea:focus{
+	background-color: #FFFFFF;
+	transition: 0.6s all;
+	}
+label{
+	color:white;
+	}
+.mybutton {
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.form{
+	width: 200px;
+	height: 800px;
+     }
+</style>
+</head>
+<body>
+<font color="white" size="3">
+<center>
+	<h1><center><u>VISITORS</u></center></h1>
+	<div class="form">
+	<form action="insert.php" method="POST">
+<h2>
+		<label>Visitor ID : </label>
+		<input type="text" name="t1" id="id" placeholder="Enter ID"><br>
+		<label>Visitor Name : </label>
+		<input type="text" name="t2" id="name" placeholder="Enter name"><br>
+		<label>Visitor Age : </label>
+		<input type="text" id="age" name="t3" placeholder="Enter Age"><br>
+		<label>Check-in-Time : </label>
+		<input type="text" id="cit" name="t4" placeholder="Enter check-in-time"><br>
+       		<label>Package Selected : </label>
+		<input type="text" id="pid" name="t5" placeholder="Enter Package Name"><br>
+		<label>Locker No. : </label>
+		<input type="text" id="lid" name="t6" placeholder="Enter locker id"><br><br>		
+		</h2><h3>CLICK HERE TO VIEW THE PACKAGE DETAILS!!<br></h3>
+		<h2><div class="mybutton"><a href="packages.html">PACKAGES</a></div><br>
+		<input type="Submit" value="Submit" class="mybutton">
+</h2>
+</form>
+</div>
+		<div class="form">
+		<form action="insertphone.php" method="POST">
+<h2>
+		<label>Visitor ID : </label>
+		<input type="text" name="t7" id="id" placeholder="Enter ID"><br>
+		<label>Visitor phone : </label>
+		<input type="text" name="t8" id="phno" placeholder="Enter Phone No."><br>
+		<input type="Submit" value="Submit" class="mybutton">
+</h2>
+</form>
+</div>
+</font>
+</center>
+</body>
+</html>

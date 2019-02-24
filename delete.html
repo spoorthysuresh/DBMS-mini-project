@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VISITOR RECORD DELETE</title>
+  <style>
+ 
+input[type="INT"],textarea{
+			width: 300px;
+			height: 50px;
+			border: 1px white;
+			border border-radius: 50%;
+			margin-top: 2px;
+			margin-bottom: 10px;
+			box-sizing: border-box;
+		}
+input[type="INT"]:focus{	
+	background-color: #FFFFFF;
+	box-shadow: 0 0 0 1px;
+	transition: 0.6s all;
+	}
+	textarea:focus{
+	background-color: #FFFFFF;
+	transition: 0.6s all;
+	}
+label{
+ font-size:20px;
+ font-family:Sans-Serif, Arial, sans-serif;
+ color:black;
+
+}
+body{ 
+    background-image: url("pic23.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+ text-shadow:1px 2px;
+ text-align: center; 
+ color:black; 
+ font-family: 'Blenda Script Regular', 'decorative', 'sans-serif';
+ font-size: 2.1em; 
+ margin: 0 auto; 
+ padding: 15px; 
+}
+
+.mybutton {
+    background-color: black;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+
+</style>
+</head>
+<body>
+	<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</p>
+  	<center><h1>DELETE RECORD</h1>
+
+	<form action ="cdelete.php" method="post">
+<br><center><label><h2>Visitor ID :</h2></label><input type="INT" name="v_id" placeholder="ID" size="50"><br>
+<input type="submit" value="Delete" class="mybutton">
+</form>
+</center>
+</body>
+</html>
